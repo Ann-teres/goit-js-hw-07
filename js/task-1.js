@@ -18,4 +18,4 @@ categoryItems.forEach(item => {
 
   console.log(`Категорія: ${categoryTitle}`);
   console.log(`Кількість елементів у категорії: ${categoryListItems.length}`);
-});
+});   
