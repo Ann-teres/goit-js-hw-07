@@ -3,6 +3,7 @@ const outputName = document.querySelector("#name-output")
 
 outputName.addEventListener("input", () => {
 
-   outputName.textContent = nameInput.value.trim() || "Anonymous";
+  const trimmedValue = nameInput.value.trim();
+  nameOutput.textContent = trimmedValue || "Anonymous";
      
 })
