@@ -41,3 +41,5 @@ const linkToLibrary = images
   .join('');
 
 gallery.insertAdjacentHTML('beforeend', linkToLibrary);
+
+
