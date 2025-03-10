@@ -30,18 +30,14 @@ const images = [
 
 
 const gallery = document.querySelector(".gallery");
-const fragment = document.createDocumentFragment(); 
-images.forEach(({ url, alt }) => {
-  const li = document.createElement("li");
-  li.classList.add("gallery-item");
 
-  const img = document.createElement("img");
-  img.src = url;
-  img.alt = alt;
-  img.classList.add("gallery-img");
+const linkToLibrary = images
+  .map(
+    ({ url, alt }) => `
+      <li class="gallery-item">
+        <img src="${url}" alt="${alt}" class="gallery-image">
+      </li>`
+  )
+  .join('');
 
-  li.append(img); 
-  fragment.append(li); 
-});
-
-gallery.append(fragment); 
+gallery.insertAdjacentHTML('beforeend', linkToLibrary);
