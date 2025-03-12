@@ -1,4 +1,4 @@
-const loginUser = document.querySelector("#login-form")
+const loginUser = document.querySelector(".login-form")
 
 
 loginUser.addEventListener("submit", function (event){
@@ -20,7 +20,7 @@ const email = form.elements.email.value.trim();
   };
     
     
-    console.log(`Login: ${login}, Password: ${password}`);
+    console.log(`Login: ${email}, Password: ${password}`);
     
-  form.reset();
+   loginUser.reset();
 })
